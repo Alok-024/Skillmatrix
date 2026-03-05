@@ -16,34 +16,41 @@ import { Skill, UserSkill } from '../../core/models';
     <mat-chip class="skill-chip" [class.interactive]="showActions">
       <div class="skill-content">
         <span class="skill-name">{{ skillName }}</span>
+
         @if (showProficiency && userSkill) {
           <span class="proficiency">Lvl {{ userSkill.proficiency }}</span>
         }
+
         @if (showEndorsements && endorsementCount() > 0) {
-          <span class="endorsement-badge"
-                [matTooltip]="endorsementTooltip()"
-                matTooltipClass="endorsement-tooltip">
-            <mat-icon class="small-icon">thumb_up</mat-icon>
+          <span
+            class="endorsement-badge"
+            [matTooltip]="endorsementTooltip()"
+            matTooltipClass="endorsement-tooltip">
+            <mat-icon class="small-icon" fontSet="material-icons">thumb_up</mat-icon>
             {{ endorsementCount() }}
           </span>
         }
+
         @if (showVouches && vouchCount() > 0) {
-          <span class="vouch-badge"
-                [matTooltip]="vouchTooltip()"
-                matTooltipClass="vouch-tooltip">
-            <mat-icon class="small-icon">verified</mat-icon>
+          <span
+            class="vouch-badge"
+            [matTooltip]="vouchTooltip()"
+            matTooltipClass="vouch-tooltip">
+            <mat-icon class="small-icon" fontSet="material-icons">verified</mat-icon>
             {{ vouchCount() }}
           </span>
         }
       </div>
+
       @if (showActions && canEndorse()) {
-        <button mat-icon-button (click)="onEndorse()" class="action-btn">
-          <mat-icon class="small-icon">thumb_up</mat-icon>
+        <button mat-icon-button (click)="onEndorse()" class="action-btn" aria-label="Endorse">
+          <mat-icon class="small-icon" fontSet="material-icons">thumb_up</mat-icon>
         </button>
       }
+
       @if (showActions && canVouch()) {
-        <button mat-icon-button (click)="onVouch()" class="action-btn">
-          <mat-icon class="small-icon">verified</mat-icon>
+        <button mat-icon-button (click)="onVouch()" class="action-btn" aria-label="Vouch">
+          <mat-icon class="small-icon" fontSet="material-icons">verified</mat-icon>
         </button>
       }
     </mat-chip>
@@ -51,37 +58,89 @@ import { Skill, UserSkill } from '../../core/models';
   styles: [`
     .skill-chip {
       margin: 4px;
+      padding: 0 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 100%;
     }
+
     .skill-content {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 8px;
+      min-width: 0; /* allows child text to truncate */
     }
+
     .skill-name {
       font-weight: 500;
+      max-width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
+
     .proficiency {
-      font-size: 0.85em;
-      opacity: 0.8;
+      font-size: 12px;
+      line-height: 1;
+      color: rgba(0,0,0,0.65);
+      padding: 2px 6px;
+      border-radius: 10px;
+      background: #f1f3f4; /* subtle grey pill */
     }
+
     .endorsement-badge, .vouch-badge {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 2px;
-      font-size: 0.85em;
+      gap: 4px;
+      font-size: 12px;
+      line-height: 1;
+      padding: 2px 6px;
+      border-radius: 10px;
     }
+
+    .endorsement-badge {
+      background: #eef7ff;  /* light blue */
+      color: #1565c0;       /* blue text */
+    }
+
+    .vouch-badge {
+      background: #e9f7ef;  /* light green */
+      color: #2e7d32;       /* green text */
+    }
+
     .small-icon {
-      font-size: 16px;
-      width: 16px;
-      height: 16px;
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
     }
+
     .action-btn {
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      min-width: 28px;
+      min-height: 28px;
+      padding: 0;
     }
+
+    .action-btn:hover mat-icon {
+      color: #673ab7; /* subtle hover affordance */
+    }
+
     .interactive {
       cursor: pointer;
+    }
+
+    /* Optional: more legible tooltips */
+    .endorsement-tooltip, .vouch-tooltip {
+      font-size: 12px !important;
+      line-height: 1.3 !important;
     }
   `]
 })
@@ -92,6 +151,7 @@ export class SkillChipComponent {
   @Input() skill!: Skill;
   @Input() userSkill?: UserSkill;
   @Input() targetUserId?: string;
+
   @Input() showProficiency = false;
   @Input() showEndorsements = false;
   @Input() showVouches = false;
