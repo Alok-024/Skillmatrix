@@ -33,24 +33,6 @@ A comprehensive **Angular-only** talent and skill management platform that demon
 - **Data Storage**: JSON files + localStorage for persistence
 - **Styling**: CSS with Material Design theming
 
-## Demo Accounts
-
-Use these accounts to test different permission levels:
-
-### Admin Account
-- **Email**: `admin@company.com`
-- **Password**: `Admin@123`
-- **Access**: Full system access including user and skill management
-
-### Manager Account
-- **Email**: `manager@company.com`
-- **Password**: `Manager@123`
-- **Access**: Team analytics and reporting features
-
-### Employee Account
-- **Email**: `employee@company.com`
-- **Password**: `Employee@123`
-- **Access**: Basic profile and search features
 
 ## Project Structure
 
@@ -189,17 +171,6 @@ Navigate to `http://localhost:4200/` after running `npm start`. The application 
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## Limitations
-
-This is a **frontend-only demo** with the following intentional limitations:
-
-- No actual backend API or database
-- No real authentication security (passwords visible in JSON)
-- All data stored in browser localStorage (not shared across devices)
-- No server-side validation
-- Session data lost on localStorage clear
-- Not suitable for production use without a proper backend
 
 ## Future Enhancements (Not Implemented)
 
