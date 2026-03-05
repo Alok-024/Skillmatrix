@@ -1,0 +1,2291 @@
+[
+  {
+    "id": "u-0001",
+    "fullName": "Admin User",
+    "employeeId": "EMP1001",
+    "department": "IT Support",
+    "location": "Bengaluru",
+    "jobTitle": "System Administrator",
+    "email": "admin@company.com",
+    "password": "Admin@123",
+    "bio": "System administrator with full platform access for managing users and configurations.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=1",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "docker", "proficiency": 5, "endorsements": ["u-0002", "u-0003"] },
+      { "skillId": "kubernetes", "proficiency": 5, "endorsements": ["u-0002"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0003", "u-0004"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0002"] }
+    ]
+  },
+  {
+    "id": "u-0002",
+    "fullName": "Manager User",
+    "employeeId": "EMP1002",
+    "department": "Engineering",
+    "location": "Chennai",
+    "jobTitle": "Engineering Manager",
+    "email": "manager@company.com",
+    "password": "Manager@123",
+    "bio": "Engineering manager overseeing multiple development teams and strategic initiatives.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=2",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0001", "u-0004", "u-0005"] },
+      { "skillId": "project-management", "proficiency": 5, "endorsements": ["u-0001", "u-0004"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0001"] },
+      { "skillId": "java", "proficiency": 4, "endorsements": ["u-0005"] },
+      { "skillId": "agile", "proficiency": 5, "endorsements": ["u-0004", "u-0005"] }
+    ]
+  },
+  {
+    "id": "u-0003",
+    "fullName": "Employee User",
+    "employeeId": "EMP1003",
+    "department": "Engineering",
+    "location": "Pune",
+    "jobTitle": "Software Engineer",
+    "email": "employee@company.com",
+    "password": "Employee@123",
+    "bio": "Full-stack developer passionate about building scalable web applications.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=3",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "angular", "proficiency": 4, "endorsements": ["u-0004", "u-0005"] },
+      { "skillId": "typescript", "proficiency": 4, "endorsements": ["u-0004"] },
+      { "skillId": "nodejs", "proficiency": 3, "endorsements": ["u-0005"] },
+      { "skillId": "rest-api", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0004",
+    "fullName": "Aarav Menon",
+    "employeeId": "EMP1004",
+    "department": "Engineering",
+    "location": "Chennai",
+    "jobTitle": "Senior Software Engineer",
+    "email": "aarav.menon@company.com",
+    "password": "password123",
+    "bio": "Backend specialist with 8+ years in Java and cloud technologies.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=12",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "java", "proficiency": 4, "endorsements": ["u-0022", "u-0045", "u-0002"] },
+      { "skillId": "spring-boot", "proficiency": 4, "endorsements": ["u-0045", "u-0002"] },
+      { "skillId": "angular", "proficiency": 3, "endorsements": [] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0045"] },
+      { "skillId": "docker", "proficiency": 3, "endorsements": ["u-0022"] }
+    ]
+  },
+  {
+    "id": "u-0005",
+    "fullName": "Priya Sharma",
+    "employeeId": "EMP1005",
+    "department": "Engineering",
+    "location": "Bengaluru",
+    "jobTitle": "Frontend Developer",
+    "email": "priya.sharma@company.com",
+    "password": "password123",
+    "bio": "UI/UX enthusiast specializing in modern frontend frameworks.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=5",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "react", "proficiency": 5, "endorsements": ["u-0006", "u-0007", "u-0008"] },
+      { "skillId": "typescript", "proficiency": 4, "endorsements": ["u-0006", "u-0007"] },
+      { "skillId": "html-css", "proficiency": 5, "endorsements": ["u-0006"] },
+      { "skillId": "figma", "proficiency": 3, "endorsements": ["u-0025"] }
+    ]
+  },
+  {
+    "id": "u-0006",
+    "fullName": "Rahul Verma",
+    "employeeId": "EMP1006",
+    "department": "Engineering",
+    "location": "Hyderabad",
+    "jobTitle": "DevOps Engineer",
+    "email": "rahul.verma@company.com",
+    "password": "password123",
+    "bio": "DevOps expert with focus on CI/CD and infrastructure automation.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=13",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "kubernetes", "proficiency": 4, "endorsements": ["u-0001", "u-0004"] },
+      { "skillId": "docker", "proficiency": 5, "endorsements": ["u-0001", "u-0004", "u-0007"] },
+      { "skillId": "jenkins", "proficiency": 4, "endorsements": ["u-0007"] },
+      { "skillId": "terraform", "proficiency": 4, "endorsements": ["u-0001"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0004"] }
+    ]
+  },
+  {
+    "id": "u-0007",
+    "fullName": "Anjali Patel",
+    "employeeId": "EMP1007",
+    "department": "QA",
+    "location": "Pune",
+    "jobTitle": "QA Lead",
+    "email": "anjali.patel@company.com",
+    "password": "password123",
+    "bio": "Quality assurance professional with expertise in test automation.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=10",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 5, "endorsements": ["u-0008", "u-0009"] },
+      { "skillId": "cypress", "proficiency": 4, "endorsements": ["u-0008"] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0009", "u-0010"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0002"] },
+      { "skillId": "java", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0008",
+    "fullName": "Vikram Singh",
+    "employeeId": "EMP1008",
+    "department": "QA",
+    "location": "Gurugram",
+    "jobTitle": "Senior QA Engineer",
+    "email": "vikram.singh@company.com",
+    "password": "password123",
+    "bio": "Test automation specialist with strong programming skills.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=14",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 4, "endorsements": ["u-0007", "u-0009"] },
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0009", "u-0020"] },
+      { "skillId": "jest", "proficiency": 3, "endorsements": ["u-0005"] },
+      { "skillId": "cypress", "proficiency": 4, "endorsements": ["u-0007"] }
+    ]
+  },
+  {
+    "id": "u-0009",
+    "fullName": "Kavya Nair",
+    "employeeId": "EMP1009",
+    "department": "QA",
+    "location": "Chennai",
+    "jobTitle": "QA Engineer",
+    "email": "kavya.nair@company.com",
+    "password": "password123",
+    "bio": "Manual and automated testing expert ensuring product quality.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=9",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 3, "endorsements": ["u-0007", "u-0008"] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0007"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": [] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0007"] }
+    ]
+  },
+  {
+    "id": "u-0010",
+    "fullName": "Arjun Reddy",
+    "employeeId": "EMP1010",
+    "department": "Data",
+    "location": "Hyderabad",
+    "jobTitle": "Data Scientist",
+    "email": "arjun.reddy@company.com",
+    "password": "password123",
+    "bio": "Machine learning engineer building intelligent data solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=15",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0011", "u-0012", "u-0020"] },
+      { "skillId": "machine-learning", "proficiency": 4, "endorsements": ["u-0011", "u-0020"] },
+      { "skillId": "tensorflow", "proficiency": 4, "endorsements": ["u-0011"] },
+      { "skillId": "pytorch", "proficiency": 3, "endorsements": ["u-0020"] },
+      { "skillId": "sql", "proficiency": 4, "endorsements": ["u-0012"] }
+    ]
+  },
+  {
+    "id": "u-0011",
+    "fullName": "Sneha Kapoor",
+    "employeeId": "EMP1011",
+    "department": "Data",
+    "location": "Bengaluru",
+    "jobTitle": "Data Analyst",
+    "email": "sneha.kapoor@company.com",
+    "password": "password123",
+    "bio": "Data analyst transforming raw data into actionable insights.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=20",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "data-analysis", "proficiency": 5, "endorsements": ["u-0012", "u-0013"] },
+      { "skillId": "tableau", "proficiency": 4, "endorsements": ["u-0012", "u-0013"] },
+      { "skillId": "power-bi", "proficiency": 4, "endorsements": ["u-0013"] },
+      { "skillId": "sql", "proficiency": 5, "endorsements": ["u-0010", "u-0012"] },
+      { "skillId": "excel", "proficiency": 5, "endorsements": ["u-0013"] }
+    ]
+  },
+  {
+    "id": "u-0012",
+    "fullName": "Rohan Gupta",
+    "employeeId": "EMP1012",
+    "department": "Data",
+    "location": "Pune",
+    "jobTitle": "Senior Data Engineer",
+    "email": "rohan.gupta@company.com",
+    "password": "password123",
+    "bio": "Data pipeline architect with expertise in big data technologies.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=33",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0010", "u-0011"] },
+      { "skillId": "kafka", "proficiency": 4, "endorsements": ["u-0010", "u-0013"] },
+      { "skillId": "elasticsearch", "proficiency": 4, "endorsements": ["u-0013"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0004"] },
+      { "skillId": "leadership", "proficiency": 3, "endorsements": ["u-0002"] }
+    ]
+  },
+  {
+    "id": "u-0013",
+    "fullName": "Meera Iyer",
+    "employeeId": "EMP1013",
+    "department": "Data",
+    "location": "Chennai",
+    "jobTitle": "Business Intelligence Analyst",
+    "email": "meera.iyer@company.com",
+    "password": "password123",
+    "bio": "BI specialist creating dashboards and reports for business decisions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=25",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "tableau", "proficiency": 5, "endorsements": ["u-0011", "u-0012"] },
+      { "skillId": "power-bi", "proficiency": 4, "endorsements": ["u-0011"] },
+      { "skillId": "sql", "proficiency": 4, "endorsements": ["u-0011", "u-0012"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0011"] }
+    ]
+  },
+  {
+    "id": "u-0014",
+    "fullName": "Amit Kumar",
+    "employeeId": "EMP1014",
+    "department": "HR",
+    "location": "Gurugram",
+    "jobTitle": "HR Manager",
+    "email": "amit.kumar@company.com",
+    "password": "password123",
+    "bio": "Human resources professional focused on talent development.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=52",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0015", "u-0016"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0015", "u-0016", "u-0002"] },
+      { "skillId": "negotiation", "proficiency": 4, "endorsements": ["u-0002"] },
+      { "skillId": "conflict-resolution", "proficiency": 4, "endorsements": ["u-0015"] }
+    ]
+  },
+  {
+    "id": "u-0015",
+    "fullName": "Neha Desai",
+    "employeeId": "EMP1015",
+    "department": "HR",
+    "location": "Mumbai",
+    "jobTitle": "Talent Acquisition Specialist",
+    "email": "neha.desai@company.com",
+    "password": "password123",
+    "bio": "Recruitment expert connecting great talent with opportunities.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=45",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0014", "u-0016"] },
+      { "skillId": "negotiation", "proficiency": 4, "endorsements": ["u-0014"] },
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0014"] }
+    ]
+  },
+  {
+    "id": "u-0016",
+    "fullName": "Sanjay Mehta",
+    "employeeId": "EMP1016",
+    "department": "HR",
+    "location": "Pune",
+    "jobTitle": "Learning & Development Specialist",
+    "email": "sanjay.mehta@company.com",
+    "password": "password123",
+    "bio": "Training and development professional empowering employees.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=60",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0014", "u-0015"] },
+      { "skillId": "presentation", "proficiency": 5, "endorsements": ["u-0014"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0014", "u-0015"] }
+    ]
+  },
+  {
+    "id": "u-0017",
+    "fullName": "Divya Krishnan",
+    "employeeId": "EMP1017",
+    "department": "Finance",
+    "location": "Bengaluru",
+    "jobTitle": "Finance Manager",
+    "email": "divya.krishnan@company.com",
+    "password": "password123",
+    "bio": "Financial analyst overseeing budgets and forecasting.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=16",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 5, "endorsements": ["u-0018", "u-0019"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0018"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0002"] }
+    ]
+  },
+  {
+    "id": "u-0018",
+    "fullName": "Karthik Pillai",
+    "employeeId": "EMP1018",
+    "department": "Finance",
+    "location": "Chennai",
+    "jobTitle": "Financial Analyst",
+    "email": "karthik.pillai@company.com",
+    "password": "password123",
+    "bio": "Numbers person analyzing financial data and trends.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=68",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 5, "endorsements": ["u-0017", "u-0019"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": ["u-0011"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0017"] },
+      { "skillId": "power-bi", "proficiency": 3, "endorsements": ["u-0011"] }
+    ]
+  },
+  {
+    "id": "u-0019",
+    "fullName": "Pooja Srinivasan",
+    "employeeId": "EMP1019",
+    "department": "Finance",
+    "location": "Hyderabad",
+    "jobTitle": "Accounts Manager",
+    "email": "pooja.srinivasan@company.com",
+    "password": "password123",
+    "bio": "Accounts professional managing financial transactions and compliance.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=47",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 4, "endorsements": ["u-0017", "u-0018"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0017"] },
+      { "skillId": "time-management", "proficiency": 4, "endorsements": ["u-0017"] }
+    ]
+  },
+  {
+    "id": "u-0020",
+    "fullName": "Harish Babu",
+    "employeeId": "EMP1020",
+    "department": "Engineering",
+    "location": "Bengaluru",
+    "jobTitle": "ML Engineer",
+    "email": "harish.babu@company.com",
+    "password": "password123",
+    "bio": "Machine learning engineer building production AI systems.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=70",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0010", "u-0021"] },
+      { "skillId": "tensorflow", "proficiency": 4, "endorsements": ["u-0010"] },
+      { "skillId": "pytorch", "proficiency": 4, "endorsements": ["u-0010", "u-0021"] },
+      { "skillId": "docker", "proficiency": 3, "endorsements": ["u-0006"] },
+      { "skillId": "kubernetes", "proficiency": 3, "endorsements": ["u-0006"] }
+    ]
+  },
+  {
+    "id": "u-0021",
+    "fullName": "Lakshmi Narayanan",
+    "employeeId": "EMP1021",
+    "department": "Engineering",
+    "location": "Chennai",
+    "jobTitle": "Backend Developer",
+    "email": "lakshmi.narayanan@company.com",
+    "password": "password123",
+    "bio": "Backend engineer specializing in Python and microservices.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=26",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0020", "u-0022"] },
+      { "skillId": "django", "proficiency": 4, "endorsements": ["u-0022"] },
+      { "skillId": "postgresql", "proficiency": 4, "endorsements": ["u-0022"] },
+      { "skillId": "rest-api", "proficiency": 4, "endorsements": ["u-0022"] },
+      { "skillId": "docker", "proficiency": 3, "endorsements": ["u-0006"] }
+    ]
+  },
+  {
+    "id": "u-0022",
+    "fullName": "Aditya Joshi",
+    "employeeId": "EMP1022",
+    "department": "Engineering",
+    "location": "Pune",
+    "jobTitle": "Full Stack Developer",
+    "email": "aditya.joshi@company.com",
+    "password": "password123",
+    "bio": "Full-stack developer working across the entire tech stack.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=11",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "nodejs", "proficiency": 4, "endorsements": ["u-0021", "u-0023"] },
+      { "skillId": "react", "proficiency": 4, "endorsements": ["u-0005", "u-0023"] },
+      { "skillId": "mongodb", "proficiency": 4, "endorsements": ["u-0023"] },
+      { "skillId": "express", "proficiency": 4, "endorsements": ["u-0021"] },
+      { "skillId": "git", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0023",
+    "fullName": "Ritika Malhotra",
+    "employeeId": "EMP1023",
+    "department": "Engineering",
+    "location": "Gurugram",
+    "jobTitle": "Software Engineer",
+    "email": "ritika.malhotra@company.com",
+    "password": "password123",
+    "bio": "Software engineer passionate about clean code and best practices.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=28",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "javascript", "proficiency": 4, "endorsements": ["u-0022", "u-0024"] },
+      { "skillId": "react", "proficiency": 4, "endorsements": ["u-0005", "u-0022"] },
+      { "skillId": "typescript", "proficiency": 3, "endorsements": ["u-0024"] },
+      { "skillId": "jest", "proficiency": 3, "endorsements": ["u-0024"] }
+    ]
+  },
+  {
+    "id": "u-0024",
+    "fullName": "Nikhil Bhat",
+    "employeeId": "EMP1024",
+    "department": "Engineering",
+    "location": "Hyderabad",
+    "jobTitle": "Frontend Engineer",
+    "email": "nikhil.bhat@company.com",
+    "password": "password123",
+    "bio": "Frontend specialist creating beautiful user interfaces.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=51",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "vue", "proficiency": 4, "endorsements": ["u-0023", "u-0025"] },
+      { "skillId": "typescript", "proficiency": 4, "endorsements": ["u-0023", "u-0005"] },
+      { "skillId": "sass", "proficiency": 4, "endorsements": ["u-0025"] },
+      { "skillId": "html-css", "proficiency": 5, "endorsements": ["u-0005", "u-0025"] }
+    ]
+  },
+  {
+    "id": "u-0025",
+    "fullName": "Shruti Rao",
+    "employeeId": "EMP1025",
+    "department": "Design",
+    "location": "Bengaluru",
+    "jobTitle": "Senior UI/UX Designer",
+    "email": "shruti.rao@company.com",
+    "password": "password123",
+    "bio": "UI/UX designer crafting delightful user experiences.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=44",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "figma", "proficiency": 5, "endorsements": ["u-0026", "u-0027"] },
+      { "skillId": "adobe-xd", "proficiency": 4, "endorsements": ["u-0026"] },
+      { "skillId": "ui-ux-design", "proficiency": 5, "endorsements": ["u-0026", "u-0027"] },
+      { "skillId": "photoshop", "proficiency": 4, "endorsements": ["u-0027"] }
+    ]
+  },
+  {
+    "id": "u-0026",
+    "fullName": "Varun Reddy",
+    "employeeId": "EMP1026",
+    "department": "Design",
+    "location": "Hyderabad",
+    "jobTitle": "Product Designer",
+    "email": "varun.reddy@company.com",
+    "password": "password123",
+    "bio": "Product designer focused on user-centered design solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=67",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "figma", "proficiency": 5, "endorsements": ["u-0025", "u-0027"] },
+      { "skillId": "ui-ux-design", "proficiency": 4, "endorsements": ["u-0025"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0025"] },
+      { "skillId": "problem-solving", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0027",
+    "fullName": "Ananya Choudhury",
+    "employeeId": "EMP1027",
+    "department": "Design",
+    "location": "Kolkata",
+    "jobTitle": "Graphic Designer",
+    "email": "ananya.choudhury@company.com",
+    "password": "password123",
+    "bio": "Visual designer creating stunning graphics and branding materials.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=23",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "photoshop", "proficiency": 5, "endorsements": ["u-0025", "u-0026"] },
+      { "skillId": "illustrator", "proficiency": 5, "endorsements": ["u-0025", "u-0026"] },
+      { "skillId": "figma", "proficiency": 3, "endorsements": ["u-0025"] }
+    ]
+  },
+  {
+    "id": "u-0028",
+    "fullName": "Rajesh Nambiar",
+    "employeeId": "EMP1028",
+    "department": "Sales",
+    "location": "Mumbai",
+    "jobTitle": "Sales Manager",
+    "email": "rajesh.nambiar@company.com",
+    "password": "password123",
+    "bio": "Sales leader driving revenue growth and client relationships.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=53",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0029", "u-0030"] },
+      { "skillId": "negotiation", "proficiency": 5, "endorsements": ["u-0029", "u-0030", "u-0002"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0029", "u-0030"] },
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0029"] }
+    ]
+  },
+  {
+    "id": "u-0029",
+    "fullName": "Priyanka Saxena",
+    "employeeId": "EMP1029",
+    "department": "Sales",
+    "location": "Delhi",
+    "jobTitle": "Senior Sales Executive",
+    "email": "priyanka.saxena@company.com",
+    "password": "password123",
+    "bio": "Sales professional with strong track record in B2B sales.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=31",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "negotiation", "proficiency": 4, "endorsements": ["u-0028", "u-0030"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0028", "u-0030"] },
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0028"] },
+      { "skillId": "presentation", "proficiency": 4, "endorsements": ["u-0030"] }
+    ]
+  },
+  {
+    "id": "u-0030",
+    "fullName": "Siddharth Agarwal",
+    "employeeId": "EMP1030",
+    "department": "Sales",
+    "location": "Bengaluru",
+    "jobTitle": "Sales Executive",
+    "email": "siddharth.agarwal@company.com",
+    "password": "password123",
+    "bio": "Energetic sales professional closing deals and building partnerships.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=58",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0028", "u-0029"] },
+      { "skillId": "negotiation", "proficiency": 3, "endorsements": ["u-0028"] },
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0028", "u-0029"] }
+    ]
+  },
+  {
+    "id": "u-0031",
+    "fullName": "Ishita Banerjee",
+    "employeeId": "EMP1031",
+    "department": "Marketing",
+    "location": "Kolkata",
+    "jobTitle": "Marketing Manager",
+    "email": "ishita.banerjee@company.com",
+    "password": "password123",
+    "bio": "Marketing strategist creating impactful campaigns.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=41",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0032", "u-0033"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0002", "u-0032"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0032", "u-0033"] },
+      { "skillId": "data-analysis", "proficiency": 3, "endorsements": ["u-0032"] }
+    ]
+  },
+  {
+    "id": "u-0032",
+    "fullName": "Rahul Singhania",
+    "employeeId": "EMP1032",
+    "department": "Marketing",
+    "location": "Mumbai",
+    "jobTitle": "Digital Marketing Specialist",
+    "email": "rahul.singhania@company.com",
+    "password": "password123",
+    "bio": "Digital marketing expert driving online growth.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=56",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0031", "u-0033"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "excel", "proficiency": 3, "endorsements": [] },
+      { "skillId": "presentation", "proficiency": 4, "endorsements": ["u-0031"] }
+    ]
+  },
+  {
+    "id": "u-0033",
+    "fullName": "Tanvi Shah",
+    "employeeId": "EMP1033",
+    "department": "Marketing",
+    "location": "Ahmedabad",
+    "jobTitle": "Content Marketing Specialist",
+    "email": "tanvi.shah@company.com",
+    "password": "password123",
+    "bio": "Content creator crafting compelling stories for brands.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=22",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0031", "u-0032"] },
+      { "skillId": "presentation", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "english", "proficiency": 5, "endorsements": [] },
+      { "skillId": "hindi", "proficiency": 5, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0034",
+    "fullName": "Abhishek Yadav",
+    "employeeId": "EMP1034",
+    "department": "IT Support",
+    "location": "Noida",
+    "jobTitle": "IT Support Engineer",
+    "email": "abhishek.yadav@company.com",
+    "password": "password123",
+    "bio": "IT support professional helping teams stay productive.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=64",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0035"] },
+      { "skillId": "problem-solving", "proficiency": 4, "endorsements": ["u-0035", "u-0001"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0035"] }
+    ]
+  },
+  {
+    "id": "u-0035",
+    "fullName": "Deepika Menon",
+    "employeeId": "EMP1035",
+    "department": "IT Support",
+    "location": "Kochi",
+    "jobTitle": "Senior IT Support Specialist",
+    "email": "deepika.menon@company.com",
+    "password": "password123",
+    "bio": "Experienced IT support specialist resolving complex technical issues.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=32",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "problem-solving", "proficiency": 5, "endorsements": ["u-0034", "u-0001"] },
+      { "skillId": "customer-service", "proficiency": 5, "endorsements": ["u-0034", "u-0001"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0034"] }
+    ]
+  },
+  {
+    "id": "u-0036",
+    "fullName": "Vishal Khanna",
+    "employeeId": "EMP1036",
+    "department": "PMO",
+    "location": "Gurugram",
+    "jobTitle": "Project Manager",
+    "email": "vishal.khanna@company.com",
+    "password": "password123",
+    "bio": "Certified project manager delivering projects on time and budget.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=69",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "project-management", "proficiency": 5, "endorsements": ["u-0037", "u-0002"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0037", "u-0002"] },
+      { "skillId": "agile", "proficiency": 5, "endorsements": ["u-0037", "u-0038"] },
+      { "skillId": "scrum", "proficiency": 5, "endorsements": ["u-0037", "u-0038"] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0037"] }
+    ]
+  },
+  {
+    "id": "u-0037",
+    "fullName": "Sneha Bhatt",
+    "employeeId": "EMP1037",
+    "department": "PMO",
+    "location": "Pune",
+    "jobTitle": "Scrum Master",
+    "email": "sneha.bhatt@company.com",
+    "password": "password123",
+    "bio": "Agile coach facilitating team collaboration and delivery.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=24",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "scrum", "proficiency": 5, "endorsements": ["u-0036", "u-0038"] },
+      { "skillId": "agile", "proficiency": 5, "endorsements": ["u-0036", "u-0038"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0036"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0036", "u-0038"] },
+      { "skillId": "conflict-resolution", "proficiency": 4, "endorsements": ["u-0036"] }
+    ]
+  },
+  {
+    "id": "u-0038",
+    "fullName": "Karan Chopra",
+    "employeeId": "EMP1038",
+    "department": "PMO",
+    "location": "Bengaluru",
+    "jobTitle": "Program Manager",
+    "email": "karan.chopra@company.com",
+    "password": "password123",
+    "bio": "Program manager overseeing multiple strategic initiatives.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=65",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "project-management", "proficiency": 5, "endorsements": ["u-0036", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0036"] },
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0036", "u-0037", "u-0002"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0036"] }
+    ]
+  },
+  {
+    "id": "u-0039",
+    "fullName": "Aditi Kulkarni",
+    "employeeId": "EMP1039",
+    "department": "Engineering",
+    "location": "Pune",
+    "jobTitle": "Software Engineer",
+    "email": "aditi.kulkarni@company.com",
+    "password": "password123",
+    "bio": "Software engineer with expertise in .NET and C#.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=48",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "csharp", "proficiency": 4, "endorsements": ["u-0040", "u-0041"] },
+      { "skillId": "dotnet", "proficiency": 4, "endorsements": ["u-0040", "u-0041"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": ["u-0040"] },
+      { "skillId": "azure", "proficiency": 3, "endorsements": ["u-0040"] }
+    ]
+  },
+  {
+    "id": "u-0040",
+    "fullName": "Manoj Kumar",
+    "employeeId": "EMP1040",
+    "department": "Engineering",
+    "location": "Chennai",
+    "jobTitle": "Senior .NET Developer",
+    "email": "manoj.kumar@company.com",
+    "password": "password123",
+    "bio": ".NET expert building enterprise applications.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=57",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "csharp", "proficiency": 5, "endorsements": ["u-0039", "u-0041"] },
+      { "skillId": "dotnet", "proficiency": 5, "endorsements": ["u-0039", "u-0041"] },
+      { "skillId": "azure", "proficiency": 4, "endorsements": ["u-0041", "u-0001"] },
+      { "skillId": "sql", "proficiency": 4, "endorsements": ["u-0039"] },
+      { "skillId": "rest-api", "proficiency": 4, "endorsements": ["u-0039"] }
+    ]
+  },
+  {
+    "id": "u-0041",
+    "fullName": "Swati Pillai",
+    "employeeId": "EMP1041",
+    "department": "Engineering",
+    "location": "Kochi",
+    "jobTitle": "Cloud Architect",
+    "email": "swati.pillai@company.com",
+    "password": "password123",
+    "bio": "Cloud architect designing scalable cloud solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=43",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "azure", "proficiency": 5, "endorsements": ["u-0040", "u-0001", "u-0004"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0004", "u-0001"] },
+      { "skillId": "terraform", "proficiency": 4, "endorsements": ["u-0006"] },
+      { "skillId": "kubernetes", "proficiency": 4, "endorsements": ["u-0006"] },
+      { "skillId": "docker", "proficiency": 4, "endorsements": ["u-0006"] }
+    ]
+  },
+  {
+    "id": "u-0042",
+    "fullName": "Ravi Shankar",
+    "employeeId": "EMP1042",
+    "department": "Engineering",
+    "location": "Hyderabad",
+    "jobTitle": "Database Administrator",
+    "email": "ravi.shankar@company.com",
+    "password": "password123",
+    "bio": "DBA ensuring optimal database performance and security.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=66",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "postgresql", "proficiency": 5, "endorsements": ["u-0043", "u-0021"] },
+      { "skillId": "mysql", "proficiency": 5, "endorsements": ["u-0043", "u-0044"] },
+      { "skillId": "sql", "proficiency": 5, "endorsements": ["u-0043", "u-0044", "u-0011"] },
+      { "skillId": "mongodb", "proficiency": 3, "endorsements": ["u-0022"] }
+    ]
+  },
+  {
+    "id": "u-0043",
+    "fullName": "Anita Deshmukh",
+    "employeeId": "EMP1043",
+    "department": "Engineering",
+    "location": "Mumbai",
+    "jobTitle": "Backend Developer",
+    "email": "anita.deshmukh@company.com",
+    "password": "password123",
+    "bio": "Backend developer focused on API development and integration.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=27",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "nodejs", "proficiency": 4, "endorsements": ["u-0022", "u-0044"] },
+      { "skillId": "express", "proficiency": 4, "endorsements": ["u-0022"] },
+      { "skillId": "mongodb", "proficiency": 4, "endorsements": ["u-0022", "u-0044"] },
+      { "skillId": "rest-api", "proficiency": 4, "endorsements": ["u-0022", "u-0044"] },
+      { "skillId": "graphql", "proficiency": 3, "endorsements": ["u-0044"] }
+    ]
+  },
+  {
+    "id": "u-0044",
+    "fullName": "Gaurav Thakur",
+    "employeeId": "EMP1044",
+    "department": "Engineering",
+    "location": "Dehradun",
+    "jobTitle": "API Developer",
+    "email": "gaurav.thakur@company.com",
+    "password": "password123",
+    "bio": "API specialist building robust and scalable services.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=71",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "nodejs", "proficiency": 4, "endorsements": ["u-0043", "u-0022"] },
+      { "skillId": "graphql", "proficiency": 4, "endorsements": ["u-0043", "u-0045"] },
+      { "skillId": "rest-api", "proficiency": 5, "endorsements": ["u-0043", "u-0045"] },
+      { "skillId": "microservices", "proficiency": 4, "endorsements": ["u-0045"] }
+    ]
+  },
+  {
+    "id": "u-0045",
+    "fullName": "Pallavi Mishra",
+    "employeeId": "EMP1045",
+    "department": "Engineering",
+    "location": "Lucknow",
+    "jobTitle": "Solutions Architect",
+    "email": "pallavi.mishra@company.com",
+    "password": "password123",
+    "bio": "Solutions architect designing end-to-end technical solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=29",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "microservices", "proficiency": 5, "endorsements": ["u-0044", "u-0002", "u-0004"] },
+      { "skillId": "rest-api", "proficiency": 5, "endorsements": ["u-0044"] },
+      { "skillId": "graphql", "proficiency": 4, "endorsements": ["u-0044"] },
+      { "skillId": "aws", "proficiency": 5, "endorsements": ["u-0004", "u-0041"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0002"] }
+    ]
+  },
+  {
+    "id": "u-0046",
+    "fullName": "Suresh Raman",
+    "employeeId": "EMP1046",
+    "department": "Data",
+    "location": "Remote",
+    "jobTitle": "Data Engineer",
+    "email": "suresh.raman@company.com",
+    "password": "password123",
+    "bio": "Data engineer building scalable data pipelines.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=72",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0012", "u-0047"] },
+      { "skillId": "kafka", "proficiency": 4, "endorsements": ["u-0012", "u-0047"] },
+      { "skillId": "sql", "proficiency": 4, "endorsements": ["u-0012"] },
+      { "skillId": "aws", "proficiency": 3, "endorsements": ["u-0012"] }
+    ]
+  },
+  {
+    "id": "u-0047",
+    "fullName": "Nalini Krishnan",
+    "employeeId": "EMP1047",
+    "department": "Data",
+    "location": "Remote",
+    "jobTitle": "Senior Data Engineer",
+    "email": "nalini.krishnan@company.com",
+    "password": "password123",
+    "bio": "Senior data engineer with deep expertise in distributed systems.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=35",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0046", "u-0012"] },
+      { "skillId": "kafka", "proficiency": 5, "endorsements": ["u-0046", "u-0012"] },
+      { "skillId": "elasticsearch", "proficiency": 4, "endorsements": ["u-0012"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0046"] },
+      { "skillId": "sql", "proficiency": 4, "endorsements": ["u-0046"] }
+    ]
+  },
+  {
+    "id": "u-0048",
+    "fullName": "Ajay Nair",
+    "employeeId": "EMP1048",
+    "department": "QA",
+    "location": "Thiruvananthapuram",
+    "jobTitle": "Test Lead",
+    "email": "ajay.nair@company.com",
+    "password": "password123",
+    "bio": "Test lead ensuring quality across all product releases.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=59",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 4, "endorsements": ["u-0007", "u-0049"] },
+      { "skillId": "cypress", "proficiency": 4, "endorsements": ["u-0007", "u-0049"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0007"] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0007", "u-0049"] }
+    ]
+  },
+  {
+    "id": "u-0049",
+    "fullName": "Preeti Agarwal",
+    "employeeId": "EMP1049",
+    "department": "QA",
+    "location": "Jaipur",
+    "jobTitle": "QA Automation Engineer",
+    "email": "preeti.agarwal@company.com",
+    "password": "password123",
+    "bio": "Automation engineer building robust test frameworks.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=21",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 4, "endorsements": ["u-0048", "u-0008"] },
+      { "skillId": "java", "proficiency": 3, "endorsements": ["u-0048"] },
+      { "skillId": "junit", "proficiency": 4, "endorsements": ["u-0048"] },
+      { "skillId": "jira", "proficiency": 3, "endorsements": ["u-0048"] }
+    ]
+  },
+  {
+    "id": "u-0050",
+    "fullName": "Mohan Das",
+    "employeeId": "EMP1050",
+    "department": "Engineering",
+    "location": "Bengaluru",
+    "jobTitle": "Tech Lead",
+    "email": "mohan.das@company.com",
+    "password": "password123",
+    "bio": "Tech lead guiding teams to build excellent software.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=61",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "java", "proficiency": 5, "endorsements": ["u-0004", "u-0002"] },
+      { "skillId": "spring-boot", "proficiency": 5, "endorsements": ["u-0004"] },
+      { "skillId": "microservices", "proficiency": 5, "endorsements": ["u-0045", "u-0004"] },
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0002", "u-0004"] },
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0002", "u-0004"] }
+    ]
+  },
+  {
+    "id": "u-0051",
+    "fullName": "Geeta Balan",
+    "employeeId": "EMP1051",
+    "department": "Design",
+    "location": "Remote",
+    "jobTitle": "UX Researcher",
+    "email": "geeta.balan@company.com",
+    "password": "password123",
+    "bio": "UX researcher understanding user behavior and needs.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=40",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "ui-ux-design", "proficiency": 4, "endorsements": ["u-0025", "u-0026"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0025"] },
+      { "skillId": "data-analysis", "proficiency": 3, "endorsements": [] },
+      { "skillId": "presentation", "proficiency": 4, "endorsements": ["u-0025"] }
+    ]
+  },
+  {
+    "id": "u-0052",
+    "fullName": "Sameer Khosla",
+    "employeeId": "EMP1052",
+    "department": "Sales",
+    "location": "Chandigarh",
+    "jobTitle": "Business Development Manager",
+    "email": "sameer.khosla@company.com",
+    "password": "password123",
+    "bio": "BD manager identifying and pursuing new business opportunities.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=63",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "negotiation", "proficiency": 5, "endorsements": ["u-0028", "u-0053"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0028", "u-0053"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0028"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0028"] }
+    ]
+  },
+  {
+    "id": "u-0053",
+    "fullName": "Ritu Malhotra",
+    "employeeId": "EMP1053",
+    "department": "Sales",
+    "location": "Remote",
+    "jobTitle": "Account Manager",
+    "email": "ritu.malhotra@company.com",
+    "password": "password123",
+    "bio": "Account manager nurturing client relationships.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=36",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "customer-service", "proficiency": 5, "endorsements": ["u-0052", "u-0028"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0052", "u-0028"] },
+      { "skillId": "negotiation", "proficiency": 4, "endorsements": ["u-0052"] },
+      { "skillId": "time-management", "proficiency": 4, "endorsements": ["u-0052"] }
+    ]
+  },
+  {
+    "id": "u-0054",
+    "fullName": "Ramesh Iyer",
+    "employeeId": "EMP1054",
+    "department": "Finance",
+    "location": "Remote",
+    "jobTitle": "Senior Financial Analyst",
+    "email": "ramesh.iyer@company.com",
+    "password": "password123",
+    "bio": "Senior analyst providing financial insights for strategic decisions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=50",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 5, "endorsements": ["u-0017", "u-0018"] },
+      { "skillId": "data-analysis", "proficiency": 5, "endorsements": ["u-0017"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": [] },
+      { "skillId": "tableau", "proficiency": 3, "endorsements": ["u-0011"] }
+    ]
+  },
+  {
+    "id": "u-0055",
+    "fullName": "Kavita Bose",
+    "employeeId": "EMP1055",
+    "department": "HR",
+    "location": "Remote",
+    "jobTitle": "HR Business Partner",
+    "email": "kavita.bose@company.com",
+    "password": "password123",
+    "bio": "HR partner aligning people strategy with business goals.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=38",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0014", "u-0015"] },
+      { "skillId": "conflict-resolution", "proficiency": 4, "endorsements": ["u-0014"] },
+      { "skillId": "leadership", "proficiency": 3, "endorsements": [] },
+      { "skillId": "strategic-planning", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0056",
+    "fullName": "Arvind Kumar",
+    "employeeId": "EMP1056",
+    "department": "Engineering",
+    "location": "Patna",
+    "jobTitle": "Software Engineer",
+    "email": "arvind.kumar@company.com",
+    "password": "password123",
+    "bio": "Full-stack engineer passionate about web technologies.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=17",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "javascript", "proficiency": 4, "endorsements": ["u-0057", "u-0058"] },
+      { "skillId": "nodejs", "proficiency": 3, "endorsements": ["u-0057"] },
+      { "skillId": "react", "proficiency": 4, "endorsements": ["u-0058"] },
+      { "skillId": "mongodb", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0057",
+    "fullName": "Nandini Reddy",
+    "employeeId": "EMP1057",
+    "department": "Engineering",
+    "location": "Visakhapatnam",
+    "jobTitle": "Backend Engineer",
+    "email": "nandini.reddy@company.com",
+    "password": "password123",
+    "bio": "Backend engineer with focus on performance optimization.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=42",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "nodejs", "proficiency": 4, "endorsements": ["u-0056", "u-0043"] },
+      { "skillId": "express", "proficiency": 4, "endorsements": ["u-0043"] },
+      { "skillId": "redis", "proficiency": 4, "endorsements": ["u-0058"] },
+      { "skillId": "postgresql", "proficiency": 3, "endorsements": ["u-0042"] }
+    ]
+  },
+  {
+    "id": "u-0058",
+    "fullName": "Tarun Malhotra",
+    "employeeId": "EMP1058",
+    "department": "Engineering",
+    "location": "Indore",
+    "jobTitle": "Frontend Engineer",
+    "email": "tarun.malhotra@company.com",
+    "password": "password123",
+    "bio": "Frontend engineer focused on performance and accessibility.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=54",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "react", "proficiency": 4, "endorsements": ["u-0056", "u-0005"] },
+      { "skillId": "typescript", "proficiency": 4, "endorsements": ["u-0056"] },
+      { "skillId": "html-css", "proficiency": 4, "endorsements": ["u-0005"] },
+      { "skillId": "responsive-design", "proficiency": 4, "endorsements": ["u-0005"] }
+    ]
+  },
+  {
+    "id": "u-0059",
+    "fullName": "Latha Subramaniam",
+    "employeeId": "EMP1059",
+    "department": "Marketing",
+    "location": "Coimbatore",
+    "jobTitle": "Social Media Manager",
+    "email": "latha.subramaniam@company.com",
+    "password": "password123",
+    "bio": "Social media expert building online brand presence.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=19",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0031", "u-0032"] },
+      { "skillId": "presentation", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "data-analysis", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0060",
+    "fullName": "Pankaj Sharma",
+    "employeeId": "EMP1060",
+    "department": "Data",
+    "location": "Jaipur",
+    "jobTitle": "Data Scientist",
+    "email": "pankaj.sharma@company.com",
+    "password": "password123",
+    "bio": "Data scientist applying ML to solve business problems.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=62",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0010", "u-0061"] },
+      { "skillId": "machine-learning", "proficiency": 4, "endorsements": ["u-0010", "u-0061"] },
+      { "skillId": "tensorflow", "proficiency": 3, "endorsements": ["u-0010"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0061"] }
+    ]
+  },
+  {
+    "id": "u-0061",
+    "fullName": "Shweta Desai",
+    "employeeId": "EMP1061",
+    "department": "Data",
+    "location": "Surat",
+    "jobTitle": "Junior Data Scientist",
+    "email": "shweta.desai@company.com",
+    "password": "password123",
+    "bio": "Aspiring data scientist learning and growing in AI/ML.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=30",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 3, "endorsements": ["u-0060"] },
+      { "skillId": "machine-learning", "proficiency": 3, "endorsements": ["u-0060"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": [] },
+      { "skillId": "data-analysis", "proficiency": 3, "endorsements": ["u-0060"] }
+    ]
+  },
+  {
+    "id": "u-0062",
+    "fullName": "Vinay Tiwari",
+    "employeeId": "EMP1062",
+    "department": "QA",
+    "location": "Bhopal",
+    "jobTitle": "QA Engineer",
+    "email": "vinay.tiwari@company.com",
+    "password": "password123",
+    "bio": "QA engineer passionate about quality and testing best practices.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=18",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 3, "endorsements": ["u-0048"] },
+      { "skillId": "jira", "proficiency": 3, "endorsements": ["u-0048"] },
+      { "skillId": "sql", "proficiency": 2, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0063",
+    "fullName": "Bharti Singh",
+    "employeeId": "EMP1063",
+    "department": "Design",
+    "location": "Lucknow",
+    "jobTitle": "UI Designer",
+    "email": "bharti.singh@company.com",
+    "password": "password123",
+    "bio": "UI designer creating pixel-perfect interfaces.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=37",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "figma", "proficiency": 4, "endorsements": ["u-0025", "u-0026"] },
+      { "skillId": "ui-ux-design", "proficiency": 4, "endorsements": ["u-0025"] },
+      { "skillId": "html-css", "proficiency": 3, "endorsements": ["u-0025"] }
+    ]
+  },
+  {
+    "id": "u-0064",
+    "fullName": "Ranjit Kumar",
+    "employeeId": "EMP1064",
+    "department": "IT Support",
+    "location": "Ranchi",
+    "jobTitle": "Network Administrator",
+    "email": "ranjit.kumar@company.com",
+    "password": "password123",
+    "bio": "Network admin maintaining reliable infrastructure.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=46",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "problem-solving", "proficiency": 4, "endorsements": ["u-0001", "u-0035"] },
+      { "skillId": "customer-service", "proficiency": 3, "endorsements": ["u-0035"] },
+      { "skillId": "communication", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0065",
+    "fullName": "Sunita Rao",
+    "employeeId": "EMP1065",
+    "department": "Finance",
+    "location": "Mysuru",
+    "jobTitle": "Junior Accountant",
+    "email": "sunita.rao@company.com",
+    "password": "password123",
+    "bio": "Junior accountant learning financial management.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=39",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 3, "endorsements": ["u-0017"] },
+      { "skillId": "communication", "proficiency": 3, "endorsements": [] },
+      { "skillId": "time-management", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0066",
+    "fullName": "Mahesh Babu",
+    "employeeId": "EMP1066",
+    "department": "Engineering",
+    "location": "Vijayawada",
+    "jobTitle": "Junior Developer",
+    "email": "mahesh.babu@company.com",
+    "password": "password123",
+    "bio": "Junior developer eager to learn and contribute.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=55",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "java", "proficiency": 2, "endorsements": [] },
+      { "skillId": "sql", "proficiency": 2, "endorsements": [] },
+      { "skillId": "git", "proficiency": 3, "endorsements": ["u-0050"] }
+    ]
+  },
+  {
+    "id": "u-0067",
+    "fullName": "Jayashree Menon",
+    "employeeId": "EMP1067",
+    "department": "HR",
+    "location": "Kochi",
+    "jobTitle": "HR Coordinator",
+    "email": "jayashree.menon@company.com",
+    "password": "password123",
+    "bio": "HR coordinator supporting recruitment and onboarding.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=34",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0014", "u-0015"] },
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0014"] },
+      { "skillId": "time-management", "proficiency": 4, "endorsements": ["u-0014"] }
+    ]
+  },
+  {
+    "id": "u-0068",
+    "fullName": "Deepak Patel",
+    "employeeId": "EMP1068",
+    "department": "Sales",
+    "location": "Vadodara",
+    "jobTitle": "Inside Sales Representative",
+    "email": "deepak.patel@company.com",
+    "password": "password123",
+    "bio": "Inside sales rep engaging with leads and closing deals.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=49",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0028", "u-0029"] },
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0028"] },
+      { "skillId": "negotiation", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0069",
+    "fullName": "Priyanka Singh",
+    "employeeId": "EMP1069",
+    "department": "Marketing",
+    "location": "Lucknow",
+    "jobTitle": "Marketing Coordinator",
+    "email": "priyanka.singh@company.com",
+    "password": "password123",
+    "bio": "Marketing coordinator supporting campaign execution.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=8",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "time-management", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "excel", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0070",
+    "fullName": "Gopal Rao",
+    "employeeId": "EMP1070",
+    "department": "PMO",
+    "location": "Nashik",
+    "jobTitle": "Project Coordinator",
+    "email": "gopal.rao@company.com",
+    "password": "password123",
+    "bio": "Project coordinator assisting project managers with delivery.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=4",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "jira", "proficiency": 3, "endorsements": ["u-0036"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0036"] },
+      { "skillId": "time-management", "proficiency": 4, "endorsements": ["u-0036"] }
+    ]
+  },
+  {
+    "id": "u-0071",
+    "fullName": "Archana Pillai",
+    "employeeId": "EMP1071",
+    "department": "Engineering",
+    "location": "Thiruvananthapuram",
+    "jobTitle": "Software Engineer",
+    "email": "archana.pillai@company.com",
+    "password": "password123",
+    "bio": "Software engineer specializing in Python and web development.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=6",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0021", "u-0072"] },
+      { "skillId": "flask", "proficiency": 4, "endorsements": ["u-0072"] },
+      { "skillId": "postgresql", "proficiency": 3, "endorsements": ["u-0042"] },
+      { "skillId": "rest-api", "proficiency": 3, "endorsements": ["u-0072"] }
+    ]
+  },
+  {
+    "id": "u-0072",
+    "fullName": "Rajiv Nanda",
+    "employeeId": "EMP1072",
+    "department": "Engineering",
+    "location": "Chandigarh",
+    "jobTitle": "Python Developer",
+    "email": "rajiv.nanda@company.com",
+    "password": "password123",
+    "bio": "Python developer building web applications and APIs.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=7",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0071", "u-0021"] },
+      { "skillId": "django", "proficiency": 4, "endorsements": ["u-0021"] },
+      { "skillId": "flask", "proficiency": 4, "endorsements": ["u-0071"] },
+      { "skillId": "rest-api", "proficiency": 4, "endorsements": ["u-0071"] },
+      { "skillId": "docker", "proficiency": 3, "endorsements": ["u-0006"] }
+    ]
+  },
+  {
+    "id": "u-0073",
+    "fullName": "Vasudha Reddy",
+    "employeeId": "EMP1073",
+    "department": "Data",
+    "location": "Warangal",
+    "jobTitle": "BI Developer",
+    "email": "vasudha.reddy@company.com",
+    "password": "password123",
+    "bio": "BI developer creating interactive dashboards and reports.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=15",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "power-bi", "proficiency": 4, "endorsements": ["u-0013", "u-0011"] },
+      { "skillId": "sql", "proficiency": 4, "endorsements": ["u-0013"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0013"] },
+      { "skillId": "excel", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0074",
+    "fullName": "Krishna Iyer",
+    "employeeId": "EMP1074",
+    "department": "QA",
+    "location": "Coimbatore",
+    "jobTitle": "Performance Tester",
+    "email": "krishna.iyer@company.com",
+    "password": "password123",
+    "bio": "Performance tester ensuring application scalability.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=2",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "jira", "proficiency": 3, "endorsements": ["u-0007"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": [] },
+      { "skillId": "problem-solving", "proficiency": 4, "endorsements": ["u-0007"] }
+    ]
+  },
+  {
+    "id": "u-0075",
+    "fullName": "Usha Menon",
+    "employeeId": "EMP1075",
+    "department": "Finance",
+    "location": "Kochi",
+    "jobTitle": "Tax Analyst",
+    "email": "usha.menon@company.com",
+    "password": "password123",
+    "bio": "Tax analyst managing compliance and reporting.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=11",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 4, "endorsements": ["u-0017"] },
+      { "skillId": "data-analysis", "proficiency": 3, "endorsements": [] },
+      { "skillId": "communication", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0076",
+    "fullName": "Balaji Krishnan",
+    "employeeId": "EMP1076",
+    "department": "Engineering",
+    "location": "Madurai",
+    "jobTitle": "Mobile Developer",
+    "email": "balaji.krishnan@company.com",
+    "password": "password123",
+    "bio": "Mobile developer building cross-platform applications.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=13",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "react", "proficiency": 4, "endorsements": ["u-0005", "u-0077"] },
+      { "skillId": "typescript", "proficiency": 4, "endorsements": ["u-0077"] },
+      { "skillId": "nodejs", "proficiency": 3, "endorsements": [] },
+      { "skillId": "git", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0077",
+    "fullName": "Sandhya Iyer",
+    "employeeId": "EMP1077",
+    "department": "Engineering",
+    "location": "Salem",
+    "jobTitle": "Mobile Developer",
+    "email": "sandhya.iyer@company.com",
+    "password": "password123",
+    "bio": "Mobile developer focused on native and hybrid apps.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=14",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "react", "proficiency": 4, "endorsements": ["u-0076", "u-0005"] },
+      { "skillId": "javascript", "proficiency": 4, "endorsements": ["u-0076"] },
+      { "skillId": "typescript", "proficiency": 3, "endorsements": ["u-0076"] },
+      { "skillId": "rest-api", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0078",
+    "fullName": "Atul Sharma",
+    "employeeId": "EMP1078",
+    "department": "Design",
+    "location": "Jaipur",
+    "jobTitle": "Motion Designer",
+    "email": "atul.sharma@company.com",
+    "password": "password123",
+    "bio": "Motion designer creating engaging animations.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=16",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "illustrator", "proficiency": 4, "endorsements": ["u-0027"] },
+      { "skillId": "photoshop", "proficiency": 3, "endorsements": ["u-0027"] },
+      { "skillId": "ui-ux-design", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0079",
+    "fullName": "Jyoti Nair",
+    "employeeId": "EMP1079",
+    "department": "HR",
+    "location": "Kozhikode",
+    "jobTitle": "Compensation Analyst",
+    "email": "jyoti.nair@company.com",
+    "password": "password123",
+    "bio": "Compensation analyst managing salary structures and benefits.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=17",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 5, "endorsements": ["u-0014", "u-0017"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0014"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0014"] }
+    ]
+  },
+  {
+    "id": "u-0080",
+    "fullName": "Sathish Kumar",
+    "employeeId": "EMP1080",
+    "department": "IT Support",
+    "location": "Tiruchirappalli",
+    "jobTitle": "Help Desk Technician",
+    "email": "sathish.kumar@company.com",
+    "password": "password123",
+    "bio": "Help desk technician providing first-level support.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=18",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "customer-service", "proficiency": 4, "endorsements": ["u-0035"] },
+      { "skillId": "problem-solving", "proficiency": 3, "endorsements": ["u-0035"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0081",
+    "fullName": "Rekha Desai",
+    "employeeId": "EMP1081",
+    "department": "Marketing",
+    "location": "Rajkot",
+    "jobTitle": "SEO Specialist",
+    "email": "rekha.desai@company.com",
+    "password": "password123",
+    "bio": "SEO specialist optimizing web presence and rankings.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=19",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "excel", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0082",
+    "fullName": "Nithin Rao",
+    "employeeId": "EMP1082",
+    "department": "Sales",
+    "location": "Mangaluru",
+    "jobTitle": "Sales Analyst",
+    "email": "nithin.rao@company.com",
+    "password": "password123",
+    "bio": "Sales analyst providing insights for sales strategy.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=20",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 4, "endorsements": ["u-0028"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0028"] },
+      { "skillId": "power-bi", "proficiency": 3, "endorsements": [] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0028"] }
+    ]
+  },
+  {
+    "id": "u-0083",
+    "fullName": "Poornima Reddy",
+    "employeeId": "EMP1083",
+    "department": "PMO",
+    "location": "Karimnagar",
+    "jobTitle": "PMO Analyst",
+    "email": "poornima.reddy@company.com",
+    "password": "password123",
+    "bio": "PMO analyst tracking project metrics and reporting.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=21",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 4, "endorsements": ["u-0036"] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0036", "u-0037"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0036"] },
+      { "skillId": "data-analysis", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0084",
+    "fullName": "Manish Gupta",
+    "employeeId": "EMP1084",
+    "department": "Engineering",
+    "location": "Ghaziabad",
+    "jobTitle": "Security Engineer",
+    "email": "manish.gupta@company.com",
+    "password": "password123",
+    "bio": "Security engineer ensuring application and infrastructure security.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=22",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0001", "u-0041"] },
+      { "skillId": "docker", "proficiency": 3, "endorsements": ["u-0006"] },
+      { "skillId": "kubernetes", "proficiency": 3, "endorsements": ["u-0006"] },
+      { "skillId": "python", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0085",
+    "fullName": "Divya Nambiar",
+    "employeeId": "EMP1085",
+    "department": "Data",
+    "location": "Thrissur",
+    "jobTitle": "Analytics Engineer",
+    "email": "divya.nambiar@company.com",
+    "password": "password123",
+    "bio": "Analytics engineer building data models and pipelines.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=23",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "sql", "proficiency": 5, "endorsements": ["u-0012", "u-0011"] },
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0012"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0011"] },
+      { "skillId": "tableau", "proficiency": 3, "endorsements": ["u-0011"] }
+    ]
+  },
+  {
+    "id": "u-0086",
+    "fullName": "Harshad Patil",
+    "employeeId": "EMP1086",
+    "department": "QA",
+    "location": "Nagpur",
+    "jobTitle": "QA Lead",
+    "email": "harshad.patil@company.com",
+    "password": "password123",
+    "bio": "QA lead establishing testing standards and processes.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=24",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 5, "endorsements": ["u-0007", "u-0048"] },
+      { "skillId": "cypress", "proficiency": 4, "endorsements": ["u-0007"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0007", "u-0002"] },
+      { "skillId": "jira", "proficiency": 5, "endorsements": ["u-0007"] },
+      { "skillId": "agile", "proficiency": 4, "endorsements": ["u-0037"] }
+    ]
+  },
+  {
+    "id": "u-0087",
+    "fullName": "Shilpa Hegde",
+    "employeeId": "EMP1087",
+    "department": "Finance",
+    "location": "Udupi",
+    "jobTitle": "Internal Auditor",
+    "email": "shilpa.hegde@company.com",
+    "password": "password123",
+    "bio": "Internal auditor ensuring compliance and controls.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=25",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 4, "endorsements": ["u-0017"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0017"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": [] },
+      { "skillId": "problem-solving", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0088",
+    "fullName": "Vikas Mehta",
+    "employeeId": "EMP1088",
+    "department": "Engineering",
+    "location": "Faridabad",
+    "jobTitle": "Site Reliability Engineer",
+    "email": "vikas.mehta@company.com",
+    "password": "password123",
+    "bio": "SRE ensuring system reliability and uptime.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=26",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "kubernetes", "proficiency": 5, "endorsements": ["u-0006", "u-0001"] },
+      { "skillId": "docker", "proficiency": 5, "endorsements": ["u-0006", "u-0001"] },
+      { "skillId": "terraform", "proficiency": 4, "endorsements": ["u-0006"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0041"] },
+      { "skillId": "python", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0089",
+    "fullName": "Anupama Rao",
+    "employeeId": "EMP1089",
+    "department": "Design",
+    "location": "Hubballi",
+    "jobTitle": "Brand Designer",
+    "email": "anupama.rao@company.com",
+    "password": "password123",
+    "bio": "Brand designer crafting visual identities.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=27",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "illustrator", "proficiency": 5, "endorsements": ["u-0027"] },
+      { "skillId": "photoshop", "proficiency": 4, "endorsements": ["u-0027"] },
+      { "skillId": "figma", "proficiency": 3, "endorsements": ["u-0025"] },
+      { "skillId": "ui-ux-design", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0090",
+    "fullName": "Suman Das",
+    "employeeId": "EMP1090",
+    "department": "HR",
+    "location": "Siliguri",
+    "jobTitle": "Employee Relations Specialist",
+    "email": "suman.das@company.com",
+    "password": "password123",
+    "bio": "Employee relations specialist fostering positive workplace culture.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=28",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0014", "u-0055"] },
+      { "skillId": "conflict-resolution", "proficiency": 5, "endorsements": ["u-0014"] },
+      { "skillId": "leadership", "proficiency": 3, "endorsements": [] },
+      { "skillId": "mentoring", "proficiency": 4, "endorsements": ["u-0014"] }
+    ]
+  },
+  {
+    "id": "u-0091",
+    "fullName": "Naveen Kumar",
+    "employeeId": "EMP1091",
+    "department": "Sales",
+    "location": "Agra",
+    "jobTitle": "Regional Sales Manager",
+    "email": "naveen.kumar@company.com",
+    "password": "password123",
+    "bio": "Regional sales manager leading sales teams across territories.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=29",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0028", "u-0002"] },
+      { "skillId": "negotiation", "proficiency": 5, "endorsements": ["u-0028", "u-0052"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0028"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0028"] }
+    ]
+  },
+  {
+    "id": "u-0092",
+    "fullName": "Lakshmi Pillai",
+    "employeeId": "EMP1092",
+    "department": "Marketing",
+    "location": "Kollam",
+    "jobTitle": "Brand Manager",
+    "email": "lakshmi.pillai@company.com",
+    "password": "password123",
+    "bio": "Brand manager developing and executing brand strategies.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=30",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0031"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0031", "u-0002"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0031"] },
+      { "skillId": "presentation", "proficiency": 5, "endorsements": ["u-0031"] }
+    ]
+  },
+  {
+    "id": "u-0093",
+    "fullName": "Rakesh Sinha",
+    "employeeId": "EMP1093",
+    "department": "IT Support",
+    "location": "Patna",
+    "jobTitle": "IT Manager",
+    "email": "rakesh.sinha@company.com",
+    "password": "password123",
+    "bio": "IT manager overseeing infrastructure and support teams.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=31",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0001", "u-0035"] },
+      { "skillId": "problem-solving", "proficiency": 5, "endorsements": ["u-0001", "u-0035"] },
+      { "skillId": "project-management", "proficiency": 4, "endorsements": ["u-0001"] },
+      { "skillId": "communication", "proficiency": 4, "endorsements": ["u-0035"] }
+    ]
+  },
+  {
+    "id": "u-0094",
+    "fullName": "Madhavi Iyer",
+    "employeeId": "EMP1094",
+    "department": "PMO",
+    "location": "Palakkad",
+    "jobTitle": "Business Analyst",
+    "email": "madhavi.iyer@company.com",
+    "password": "password123",
+    "bio": "Business analyst bridging business needs with technical solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=32",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0036", "u-0037"] },
+      { "skillId": "problem-solving", "proficiency": 4, "endorsements": ["u-0036"] },
+      { "skillId": "sql", "proficiency": 3, "endorsements": [] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0036"] }
+    ]
+  },
+  {
+    "id": "u-0095",
+    "fullName": "Arun Kumar",
+    "employeeId": "EMP1095",
+    "department": "Engineering",
+    "location": "Trichy",
+    "jobTitle": "Frontend Architect",
+    "email": "arun.kumar@company.com",
+    "password": "password123",
+    "bio": "Frontend architect designing scalable UI architectures.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=33",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "react", "proficiency": 5, "endorsements": ["u-0005", "u-0050"] },
+      { "skillId": "angular", "proficiency": 5, "endorsements": ["u-0050", "u-0003"] },
+      { "skillId": "typescript", "proficiency": 5, "endorsements": ["u-0005", "u-0050"] },
+      { "skillId": "responsive-design", "proficiency": 5, "endorsements": ["u-0005"] },
+      { "skillId": "mentoring", "proficiency": 4, "endorsements": ["u-0050"] }
+    ]
+  },
+  {
+    "id": "u-0096",
+    "fullName": "Sowmya Reddy",
+    "employeeId": "EMP1096",
+    "department": "Data",
+    "location": "Nellore",
+    "jobTitle": "ML Engineer",
+    "email": "sowmya.reddy@company.com",
+    "password": "password123",
+    "bio": "ML engineer deploying machine learning models to production.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=34",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0010", "u-0020"] },
+      { "skillId": "tensorflow", "proficiency": 4, "endorsements": ["u-0010", "u-0020"] },
+      { "skillId": "pytorch", "proficiency": 4, "endorsements": ["u-0020"] },
+      { "skillId": "docker", "proficiency": 4, "endorsements": ["u-0006"] },
+      { "skillId": "aws", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0097",
+    "fullName": "Gokul Krishna",
+    "employeeId": "EMP1097",
+    "department": "QA",
+    "location": "Kannur",
+    "jobTitle": "Test Architect",
+    "email": "gokul.krishna@company.com",
+    "password": "password123",
+    "bio": "Test architect designing comprehensive testing strategies.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=35",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 5, "endorsements": ["u-0086", "u-0007"] },
+      { "skillId": "cypress", "proficiency": 5, "endorsements": ["u-0086", "u-0007"] },
+      { "skillId": "jest", "proficiency": 4, "endorsements": ["u-0086"] },
+      { "skillId": "junit", "proficiency": 4, "endorsements": ["u-0086"] },
+      { "skillId": "leadership", "proficiency": 3, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0098",
+    "fullName": "Revathi Nair",
+    "employeeId": "EMP1098",
+    "department": "Finance",
+    "location": "Alappuzha",
+    "jobTitle": "Finance Controller",
+    "email": "revathi.nair@company.com",
+    "password": "password123",
+    "bio": "Finance controller managing financial operations and reporting.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=36",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "excel", "proficiency": 5, "endorsements": ["u-0017", "u-0018"] },
+      { "skillId": "data-analysis", "proficiency": 5, "endorsements": ["u-0017"] },
+      { "skillId": "leadership", "proficiency": 4, "endorsements": ["u-0017", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0017"] }
+    ]
+  },
+  {
+    "id": "u-0099",
+    "fullName": "Satish Babu",
+    "employeeId": "EMP1099",
+    "department": "Engineering",
+    "location": "Guntur",
+    "jobTitle": "Platform Engineer",
+    "email": "satish.babu@company.com",
+    "password": "password123",
+    "bio": "Platform engineer building internal developer platforms.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=37",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "kubernetes", "proficiency": 5, "endorsements": ["u-0088", "u-0006"] },
+      { "skillId": "docker", "proficiency": 5, "endorsements": ["u-0088", "u-0006"] },
+      { "skillId": "terraform", "proficiency": 5, "endorsements": ["u-0006", "u-0041"] },
+      { "skillId": "gitlab-ci", "proficiency": 4, "endorsements": ["u-0006"] },
+      { "skillId": "python", "proficiency": 4, "endorsements": [] }
+    ]
+  },
+  {
+    "id": "u-0100",
+    "fullName": "Vidya Menon",
+    "employeeId": "EMP1100",
+    "department": "Design",
+    "location": "Kottayam",
+    "jobTitle": "Design Lead",
+    "email": "vidya.menon@company.com",
+    "password": "password123",
+    "bio": "Design lead guiding design teams and establishing standards.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=38",
+    "roles": ["MANAGER"],
+    "skills": [
+      { "skillId": "figma", "proficiency": 5, "endorsements": ["u-0025", "u-0026"] },
+      { "skillId": "ui-ux-design", "proficiency": 5, "endorsements": ["u-0025", "u-0026"] },
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0025", "u-0002"] },
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0025"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0025"] }
+    ]
+  },
+  {
+    "id": "u-0101",
+    "fullName": "Harish Reddy",
+    "employeeId": "EMP1101",
+    "department": "HR",
+    "location": "Nizamabad",
+    "jobTitle": "VP of HR",
+    "email": "harish.reddy@company.com",
+    "password": "password123",
+    "bio": "HR executive leading people strategy and operations.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=39",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0014", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0014"] },
+      { "skillId": "conflict-resolution", "proficiency": 5, "endorsements": ["u-0014"] }
+    ]
+  },
+  {
+    "id": "u-0102",
+    "fullName": "Savitri Iyer",
+    "employeeId": "EMP1102",
+    "department": "Sales",
+    "location": "Ernakulam",
+    "jobTitle": "VP of Sales",
+    "email": "savitri.iyer@company.com",
+    "password": "password123",
+    "bio": "Sales executive driving revenue and market expansion.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=40",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0028", "u-0091", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "negotiation", "proficiency": 5, "endorsements": ["u-0028"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0028", "u-0091"] }
+    ]
+  },
+  {
+    "id": "u-0103",
+    "fullName": "Ganesh Kumar",
+    "employeeId": "EMP1103",
+    "department": "Engineering",
+    "location": "Vellore",
+    "jobTitle": "VP of Engineering",
+    "email": "ganesh.kumar@company.com",
+    "password": "password123",
+    "bio": "Engineering leader overseeing technical strategy and execution.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=41",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0050", "u-0002", "u-0045"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0050", "u-0002"] },
+      { "skillId": "microservices", "proficiency": 5, "endorsements": ["u-0045", "u-0050"] }
+    ]
+  },
+  {
+    "id": "u-0104",
+    "fullName": "Shanthi Menon",
+    "employeeId": "EMP1104",
+    "department": "Data",
+    "location": "Kochi",
+    "jobTitle": "Head of Data",
+    "email": "shanthi.menon@company.com",
+    "password": "password123",
+    "bio": "Data leader building data-driven culture and capabilities.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=42",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0012", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "data-analysis", "proficiency": 5, "endorsements": ["u-0012"] },
+      { "skillId": "machine-learning", "proficiency": 4, "endorsements": ["u-0010"] }
+    ]
+  },
+  {
+    "id": "u-0105",
+    "fullName": "Venkat Rao",
+    "employeeId": "EMP1105",
+    "department": "Engineering",
+    "location": "Tirupati",
+    "jobTitle": "Staff Engineer",
+    "email": "venkat.rao@company.com",
+    "password": "password123",
+    "bio": "Staff engineer solving complex technical challenges.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=43",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "java", "proficiency": 5, "endorsements": ["u-0050", "u-0103"] },
+      { "skillId": "spring-boot", "proficiency": 5, "endorsements": ["u-0050", "u-0103"] },
+      { "skillId": "microservices", "proficiency": 5, "endorsements": ["u-0045", "u-0050"] },
+      { "skillId": "aws", "proficiency": 5, "endorsements": ["u-0041", "u-0045"] },
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0050", "u-0103"] }
+    ]
+  },
+  {
+    "id": "u-0106",
+    "fullName": "Leela Nair",
+    "employeeId": "EMP1106",
+    "department": "Engineering",
+    "location": "Erode",
+    "jobTitle": "Principal Engineer",
+    "email": "leela.nair@company.com",
+    "password": "password123",
+    "bio": "Principal engineer driving technical excellence and innovation.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=44",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0103", "u-0050"] },
+      { "skillId": "microservices", "proficiency": 5, "endorsements": ["u-0045", "u-0103"] },
+      { "skillId": "aws", "proficiency": 5, "endorsements": ["u-0041", "u-0045"] },
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0103"] },
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0103", "u-0050"] }
+    ]
+  },
+  {
+    "id": "u-0107",
+    "fullName": "Murali Krishna",
+    "employeeId": "EMP1107",
+    "department": "Data",
+    "location": "Rajahmundry",
+    "jobTitle": "Senior Data Scientist",
+    "email": "murali.krishna@company.com",
+    "password": "password123",
+    "bio": "Senior data scientist building advanced ML solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=45",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0104", "u-0010"] },
+      { "skillId": "machine-learning", "proficiency": 5, "endorsements": ["u-0104", "u-0010", "u-0020"] },
+      { "skillId": "tensorflow", "proficiency": 5, "endorsements": ["u-0010", "u-0020"] },
+      { "skillId": "pytorch", "proficiency": 5, "endorsements": ["u-0020", "u-0096"] },
+      { "skillId": "mentoring", "proficiency": 4, "endorsements": ["u-0010"] }
+    ]
+  },
+  {
+    "id": "u-0108",
+    "fullName": "Vasantha Kumar",
+    "employeeId": "EMP1108",
+    "department": "QA",
+    "location": "Tirunelveli",
+    "jobTitle": "Director of QA",
+    "email": "vasantha.kumar@company.com",
+    "password": "password123",
+    "bio": "QA director ensuring quality across all products.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=46",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0086", "u-0007", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "selenium", "proficiency": 5, "endorsements": ["u-0086"] },
+      { "skillId": "agile", "proficiency": 5, "endorsements": ["u-0037"] }
+    ]
+  },
+  {
+    "id": "u-0109",
+    "fullName": "Yamini Reddy",
+    "employeeId": "EMP1109",
+    "department": "Design",
+    "location": "Anantapur",
+    "jobTitle": "Senior Product Designer",
+    "email": "yamini.reddy@company.com",
+    "password": "password123",
+    "bio": "Senior product designer creating user-centered solutions.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=47",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "figma", "proficiency": 5, "endorsements": ["u-0100", "u-0025"] },
+      { "skillId": "ui-ux-design", "proficiency": 5, "endorsements": ["u-0100", "u-0025"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0100"] },
+      { "skillId": "mentoring", "proficiency": 4, "endorsements": ["u-0100"] }
+    ]
+  },
+  {
+    "id": "u-0110",
+    "fullName": "Prakash Iyer",
+    "employeeId": "EMP1110",
+    "department": "Marketing",
+    "location": "Wayanad",
+    "jobTitle": "VP of Marketing",
+    "email": "prakash.iyer@company.com",
+    "password": "password123",
+    "bio": "Marketing executive leading brand and growth initiatives.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=48",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0092", "u-0031", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0092", "u-0031"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0092"] }
+    ]
+  },
+  {
+    "id": "u-0111",
+    "fullName": "Ashwin Nair",
+    "employeeId": "EMP1111",
+    "department": "PMO",
+    "location": "Idukki",
+    "jobTitle": "Director of PMO",
+    "email": "ashwin.nair@company.com",
+    "password": "password123",
+    "bio": "PMO director establishing project governance and standards.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=49",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0038", "u-0036", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "project-management", "proficiency": 5, "endorsements": ["u-0038", "u-0036"] },
+      { "skillId": "agile", "proficiency": 5, "endorsements": ["u-0037", "u-0038"] }
+    ]
+  },
+  {
+    "id": "u-0112",
+    "fullName": "Saraswathi Menon",
+    "employeeId": "EMP1112",
+    "department": "Finance",
+    "location": "Kasaragod",
+    "jobTitle": "CFO",
+    "email": "saraswathi.menon@company.com",
+    "password": "password123",
+    "bio": "Chief Financial Officer managing financial strategy.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=50",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0098", "u-0017", "u-0002"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "data-analysis", "proficiency": 5, "endorsements": ["u-0098"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0098", "u-0017"] }
+    ]
+  },
+  {
+    "id": "u-0113",
+    "fullName": "Balasubramanian Iyer",
+    "employeeId": "EMP1113",
+    "department": "IT Support",
+    "location": "Madurai",
+    "jobTitle": "CTO",
+    "email": "balasubramanian.iyer@company.com",
+    "password": "password123",
+    "bio": "Chief Technology Officer driving technical vision.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=51",
+    "roles": ["ADMIN"],
+    "skills": [
+      { "skillId": "leadership", "proficiency": 5, "endorsements": ["u-0103", "u-0002", "u-0001"] },
+      { "skillId": "strategic-planning", "proficiency": 5, "endorsements": ["u-0002", "u-0001"] },
+      { "skillId": "cloud", "proficiency": 5, "endorsements": [] },
+      { "skillId": "mentoring", "proficiency": 5, "endorsements": ["u-0103", "u-0050"] }
+    ]
+  },
+  {
+    "id": "u-0114",
+    "fullName": "Sudha Krishnan",
+    "employeeId": "EMP1114",
+    "department": "Engineering",
+    "location": "Dindigul",
+    "jobTitle": "Senior Backend Engineer",
+    "email": "sudha.krishnan@company.com",
+    "password": "password123",
+    "bio": "Senior backend engineer building scalable services.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=52",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "nodejs", "proficiency": 5, "endorsements": ["u-0050", "u-0043"] },
+      { "skillId": "express", "proficiency": 5, "endorsements": ["u-0043"] },
+      { "skillId": "mongodb", "proficiency": 4, "endorsements": ["u-0043"] },
+      { "skillId": "rest-api", "proficiency": 5, "endorsements": ["u-0044", "u-0043"] },
+      { "skillId": "microservices", "proficiency": 4, "endorsements": ["u-0045"] }
+    ]
+  },
+  {
+    "id": "u-0115",
+    "fullName": "Thilak Nair",
+    "employeeId": "EMP1115",
+    "department": "Engineering",
+    "location": "Thoothukudi",
+    "jobTitle": "Senior Frontend Engineer",
+    "email": "thilak.nair@company.com",
+    "password": "password123",
+    "bio": "Senior frontend engineer crafting seamless user experiences.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=53",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "angular", "proficiency": 5, "endorsements": ["u-0095", "u-0050"] },
+      { "skillId": "typescript", "proficiency": 5, "endorsements": ["u-0095", "u-0005"] },
+      { "skillId": "html-css", "proficiency": 5, "endorsements": ["u-0095"] },
+      { "skillId": "responsive-design", "proficiency": 5, "endorsements": ["u-0095"] },
+      { "skillId": "sass", "proficiency": 4, "endorsements": ["u-0024"] }
+    ]
+  },
+  {
+    "id": "u-0116",
+    "fullName": "Padmini Reddy",
+    "employeeId": "EMP1116",
+    "department": "QA",
+    "location": "Kadapa",
+    "jobTitle": "Senior QA Engineer",
+    "email": "padmini.reddy@company.com",
+    "password": "password123",
+    "bio": "Senior QA engineer ensuring comprehensive test coverage.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=54",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "selenium", "proficiency": 5, "endorsements": ["u-0097", "u-0086"] },
+      { "skillId": "cypress", "proficiency": 4, "endorsements": ["u-0097", "u-0086"] },
+      { "skillId": "python", "proficiency": 4, "endorsements": ["u-0097"] },
+      { "skillId": "jira", "proficiency": 4, "endorsements": ["u-0086"] }
+    ]
+  },
+  {
+    "id": "u-0117",
+    "fullName": "Raghavan Iyer",
+    "employeeId": "EMP1117",
+    "department": "Data",
+    "location": "Kanniyakumari",
+    "jobTitle": "Senior Data Engineer",
+    "email": "raghavan.iyer@company.com",
+    "password": "password123",
+    "bio": "Senior data engineer optimizing data infrastructure.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=55",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "python", "proficiency": 5, "endorsements": ["u-0047", "u-0012"] },
+      { "skillId": "kafka", "proficiency": 5, "endorsements": ["u-0047", "u-0012"] },
+      { "skillId": "elasticsearch", "proficiency": 5, "endorsements": ["u-0012"] },
+      { "skillId": "aws", "proficiency": 4, "endorsements": ["u-0047"] },
+      { "skillId": "sql", "proficiency": 5, "endorsements": ["u-0012"] }
+    ]
+  },
+  {
+    "id": "u-0118",
+    "fullName": "Kalpana Menon",
+    "employeeId": "EMP1118",
+    "department": "Design",
+    "location": "Palani",
+    "jobTitle": "Visual Designer",
+    "email": "kalpana.menon@company.com",
+    "password": "password123",
+    "bio": "Visual designer creating stunning visuals for digital products.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=56",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "photoshop", "proficiency": 5, "endorsements": ["u-0100", "u-0027"] },
+      { "skillId": "illustrator", "proficiency": 5, "endorsements": ["u-0027", "u-0089"] },
+      { "skillId": "figma", "proficiency": 4, "endorsements": ["u-0100"] },
+      { "skillId": "ui-ux-design", "proficiency": 4, "endorsements": ["u-0100"] }
+    ]
+  },
+  {
+    "id": "u-0119",
+    "fullName": "Srinivasan Pillai",
+    "employeeId": "EMP1119",
+    "department": "Sales",
+    "location": "Pollachi",
+    "jobTitle": "Senior Account Executive",
+    "email": "srinivasan.pillai@company.com",
+    "password": "password123",
+    "bio": "Senior account executive managing key client relationships.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=57",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "negotiation", "proficiency": 5, "endorsements": ["u-0091", "u-0028"] },
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0091", "u-0028"] },
+      { "skillId": "customer-service", "proficiency": 5, "endorsements": ["u-0091"] },
+      { "skillId": "presentation", "proficiency": 5, "endorsements": ["u-0091"] }
+    ]
+  },
+  {
+    "id": "u-0120",
+    "fullName": "Vasanthi Kumar",
+    "employeeId": "EMP1120",
+    "department": "Marketing",
+    "location": "Ooty",
+    "jobTitle": "Senior Marketing Manager",
+    "email": "vasanthi.kumar@company.com",
+    "password": "password123",
+    "bio": "Senior marketing manager driving integrated campaigns.",
+    "profileImageUrl": "https://i.pravatar.cc/150?img=58",
+    "roles": ["EMPLOYEE"],
+    "skills": [
+      { "skillId": "communication", "proficiency": 5, "endorsements": ["u-0092", "u-0110"] },
+      { "skillId": "strategic-planning", "proficiency": 4, "endorsements": ["u-0110"] },
+      { "skillId": "presentation", "proficiency": 5, "endorsements": ["u-0092"] },
+      { "skillId": "data-analysis", "proficiency": 4, "endorsements": ["u-0092"] }
+    ]
+  }
+]
