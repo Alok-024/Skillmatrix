@@ -1,0 +1,17 @@
+[
+  { "timestamp": "2026-02-28T10:15:00Z", "userId": "u-0005", "action": "UPDATED_SKILL", "detail": "angular → 4→5" },
+  { "timestamp": "2026-02-28T09:02:00Z", "userId": "u-0010", "action": "ADDED_SKILL", "detail": "kubernetes → 2" },
+  { "timestamp": "2026-02-27T14:30:00Z", "userId": "u-0022", "action": "UPDATED_SKILL", "detail": "react → 3→4" },
+  { "timestamp": "2026-02-27T11:45:00Z", "userId": "u-0041", "action": "ADDED_SKILL", "detail": "gcp → 3" },
+  { "timestamp": "2026-02-26T16:20:00Z", "userId": "u-0056", "action": "UPDATED_PROFILE", "detail": "Updated bio" },
+  { "timestamp": "2026-02-26T13:10:00Z", "userId": "u-0063", "action": "ADDED_SKILL", "detail": "adobe-xd → 3" },
+  { "timestamp": "2026-02-25T10:05:00Z", "userId": "u-0033", "action": "UPDATED_SKILL", "detail": "english → 4→5" },
+  { "timestamp": "2026-02-25T08:50:00Z", "userId": "u-0045", "action": "ADDED_SKILL", "detail": "azure → 4" },
+  { "timestamp": "2026-02-24T15:30:00Z", "userId": "u-0072", "action": "UPDATED_SKILL", "detail": "python → 4→5" },
+  { "timestamp": "2026-02-24T12:15:00Z", "userId": "u-0088", "action": "ADDED_SKILL", "detail": "ansible → 3" },
+  { "timestamp": "2026-02-23T17:00:00Z", "userId": "u-0020", "action": "UPDATED_SKILL", "detail": "machine-learning → 3→4" },
+  { "timestamp": "2026-02-23T14:45:00Z", "userId": "u-0095", "action": "ADDED_SKILL", "detail": "vue → 4" },
+  { "timestamp": "2026-02-22T11:30:00Z", "userId": "u-0115", "action": "UPDATED_SKILL", "detail": "typescript → 4→5" },
+  { "timestamp": "2026-02-22T09:20:00Z", "userId": "u-0004", "action": "ADDED_SKILL", "detail": "mongodb → 2" },
+  { "timestamp": "2026-02-21T16:10:00Z", "userId": "u-0107", "action": "UPDATED_SKILL", "detail": "tensorflow → 4→5" }
+]
