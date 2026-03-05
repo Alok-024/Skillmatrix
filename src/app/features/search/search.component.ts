@@ -8,10 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { MatCardModule } from '@angular/material/card';
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, startWith, map } from 'rxjs/operators';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { OverlayStoreService } from '../../core/services/overlay-store.service';
 import { UserCardComponent } from '../../shared/components/user-card.component';
-import { User } from '../../core/models';
 
 @Component({
   selector: 'app-search',
@@ -82,7 +82,8 @@ import { User } from '../../core/models';
       @if (filteredUsers().length > pageSize()) {
         <mat-paginator
           [length]="filteredUsers().length"
-          [pageSize]="pageSize()"
+          [pageSize]="pageSize()
+          "
           [pageSizeOptions]="[12, 24, 48]"
           (page)="onPageChange($event)">
         </mat-paginator>
@@ -156,40 +157,95 @@ import { User } from '../../core/models';
 export class SearchComponent {
   private overlayStore = inject(OverlayStoreService);
 
+  // ===== Form Controls (unchanged UI) =====
   searchControl = new FormControl('');
   departmentControl = new FormControl<string[]>([]);
   proficiencyControl = new FormControl(0);
 
+  // ===== Turn form controls into signals so computed() re-runs on change =====
+  searchTermSig = toSignal(
+    this.searchControl.valueChanges.pipe(
+      debounceTime(200),
+      map(v => (v ?? '').toString().trim().toLowerCase()),
+      distinctUntilChanged(),
+      startWith('')
+    ),
+    { initialValue: '' }
+  );
+
+  departmentsSig = toSignal(
+    this.departmentControl.valueChanges.pipe(
+      map(v => (v ?? []) as string[]),
+      startWith(this.departmentControl.value ?? [])
+    ),
+    { initialValue: this.departmentControl.value ?? [] }
+  );
+
+  minProfSig = toSignal(
+    this.proficiencyControl.valueChanges.pipe(
+      map(v => Number(v ?? 0)),
+      distinctUntilChanged(),
+      startWith(this.proficiencyControl.value ?? 0)
+    ),
+    { initialValue: this.proficiencyControl.value ?? 0 }
+  );
+
+  // ===== Pagination (unchanged) =====
   pageIndex = signal(0);
   pageSize = signal(12);
 
+  // ===== Store signals (unchanged) =====
   users = this.overlayStore.users;
   departments = this.overlayStore.departments;
   skills = this.overlayStore.skills;
 
+  // ===== Filtered users (now reactive to form changes) =====
   filteredUsers = computed(() => {
-    const searchTerm = this.searchControl.value?.toLowerCase() || '';
-    const departments = this.departmentControl.value || [];
-    const minProficiency = this.proficiencyControl.value || 0;
+    const users = this.users();
+    const skills = this.skills();
 
-    return this.users().filter(user => {
-      if (departments.length > 0 && !departments.includes(user.department)) {
+    const searchTerm = this.searchTermSig();
+    const selectedDepts = this.departmentsSig();
+    const minProf = this.minProfSig();
+
+    return users.filter(user => {
+      // Department filter (always applies)
+      if (selectedDepts.length > 0 && !selectedDepts.includes(user.department)) {
         return false;
       }
 
-      if (searchTerm) {
-        const matchingSkills = user.skills.filter(us => {
-          const skill = this.skills().find(s => s.id === us.skillId);
-          return skill?.name.toLowerCase().includes(searchTerm) && us.proficiency >= minProficiency;
-        });
+      // Check skills against min proficiency and (optional) search term
+      const hasQualifiedSkill = user.skills.some(us => {
+        const skillMeta = skills.find(s => s.id === us.skillId);
+        const skillNameOrId = (skillMeta?.name ?? us.skillId).toLowerCase();
 
-        return matchingSkills.length > 0;
+        const meetsLevel = us.proficiency >= minProf;
+        if (!searchTerm) return meetsLevel;
+
+        const matchesSkill = skillNameOrId.includes(searchTerm);
+        return meetsLevel && matchesSkill;
+      });
+
+      if (!searchTerm) {
+        // No text search → pure department + min proficiency filter
+        return hasQualifiedSkill;
       }
 
-      return true;
+      // Optional: broaden search to user info (uncomment if you want people-search)
+      // const matchesUserInfo =
+      //   user.fullName.toLowerCase().includes(searchTerm) ||
+      //   user.jobTitle.toLowerCase().includes(searchTerm) ||
+      //   user.department.toLowerCase().includes(searchTerm) ||
+      //   user.location.toLowerCase().includes(searchTerm) ||
+      //   user.email.toLowerCase().includes(searchTerm);
+
+      // return hasQualifiedSkill || matchesUserInfo;
+
+      return hasQualifiedSkill; // keep pure skill-based search as before
     });
   });
 
+  // ===== Paginated slice (unchanged) =====
   paginatedUsers = computed(() => {
     const start = this.pageIndex() * this.pageSize();
     const end = start + this.pageSize();
@@ -197,20 +253,16 @@ export class SearchComponent {
   });
 
   constructor() {
-    this.searchControl.valueChanges.pipe(
-      debounceTime(300),
-      distinctUntilChanged()
-    ).subscribe(() => {
-      this.pageIndex.set(0);
-    });
+    // Reset pagination when filters change (unchanged)
+    this.searchControl.valueChanges
+      .pipe(debounceTime(200), distinctUntilChanged())
+      .subscribe(() => this.pageIndex.set(0));
 
-    this.departmentControl.valueChanges.subscribe(() => {
-      this.pageIndex.set(0);
-    });
+    this.departmentControl.valueChanges
+      .subscribe(() => this.pageIndex.set(0));
 
-    this.proficiencyControl.valueChanges.subscribe(() => {
-      this.pageIndex.set(0);
-    });
+    this.proficiencyControl.valueChanges
+      .subscribe(() => this.pageIndex.set(0));
   }
 
   onPageChange(event: PageEvent): void {
