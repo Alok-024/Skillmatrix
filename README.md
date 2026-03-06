@@ -184,6 +184,67 @@ Navigate to `http://localhost:4200/` after running `npm start`. The application 
 - Dark/light theme toggle
 - Mobile application
 
+# User Login Credentials and Roles
+
+The following section outlines the login credentials and responsibilities for three categories of users in the system: **Admin**, **Manager**, and **Employees**.
+
+---
+
+## 👨‍💻 Admin User
+- **Name:** Admin User  
+- **Email:** admin@company.com  
+- **Password:** Admin@123  
+
+---
+
+## 👩‍💼 Manager User
+- **Name:** Manager User  
+- **Email:** manager@company.com  
+- **Password:** Manager@123  
+
+---
+
+## 👥 Employees
+- **Password (common for all employees):** `password123`  
+### Employee Emails:
+- employee@company.com  
+- aarav.menon@company.com  
+- priya.sharma@company.com  
+- rahul.verma@company.com  
+- anjali.patel@company.com  
+- vikram.singh@company.com  
+- kavya.nair@company.com  
+- arjun.reddy@company.com  
+- sneha.kapoor@company.com  
+- rohan.gupta@company.com  
+- meera.iyer@company.com  
+- amit.kumar@company.com  
+- neha.desai@company.com  
+- sanjay.mehta@company.com  
+- divya.krishnan@company.com  
+- karthik.pillai@company.com  
+- pooja.srinivasan@company.com  
+- harish.babu@company.com  
+- lakshmi.narayanan@company.com  
+- aditya.joshi@company.com  
+- ritika.malhotra@company.com  
+- nikhil.bhat@company.com  
+- shruti.rao@company.com  
+- varun.reddy@company.com  
+- ananya.choudhury@company.com  
+- rajesh.nambiar@company.com  
+- priyanka.saxena@company.com  
+- siddharth.agarwal@company.com  
+- ishita.banerjee@company.com  
+- rahul.singhania@company.com  
+- tanvi.shah@company.com  
+- abhishek.yadav@company.com  
+- deepika.menon@company.com  
+- vishal.khanna@company.com  
+- sneha.bhatt@company.com  
+
+---
+
 ## License
 
 This is a demonstration project created for educational purposes.
